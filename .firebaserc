@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "udemy-851c0": {
+      "hosting": {
+        "ang_vasco": [
+          "udemy-851c0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "udemy-851c0"
+  }
+}

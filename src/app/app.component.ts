@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'ang_vasco';
+export class AppComponent implements OnInit {
+
+constructor (public us: UserService){}
+
+ngOnInit(): void {
+
+}
+
+logout() {
+  this.us.logout();
+  alert("Desconectado com sucesso")
+}
+
 }
